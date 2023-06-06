@@ -1,1 +1,185 @@
+:root {
+   --main-font: 'Open Sans', sans-serif;
+   --secongary-font:"Raleway", sans-serif;
+   --accent-color:#ff6c00;
+}
 
+body {
+   font-family: var(--main-font);
+}
+
+.list {
+list-style: none;
+}
+
+.link {
+   text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin: 0;
+}
+
+ul,ol {
+   margin: 0;
+   padding: 0;
+}
+
+p {
+   margin: 0;
+}
+
+img {
+   display: block;
+}
+
+.address {
+   font-style: normal;
+}
+/* COMPONENTS */
+
+.modal-btn {
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 1.333;
+   letter-spacing: 0.09em;
+   text-transform: uppercase;
+
+    /* color: #ffffff; */
+}
+
+.social-links-link {
+   font-weight: 600;
+   font-size: 11px;
+   line-height: 1.364;
+   letter-spacing: 0.2em;
+
+   color: #303030
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus,
+.header-tel:hover,
+.header-tel:focus,
+.social-links-link:hover,
+.social-links-link:focus {
+   color: var(--accent-color);
+}
+
+.description {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.667;
+   letter-spacing: 0.02em;
+   color: #9da4bd;
+}
+
+.title {
+   font-family: var(--secongary-font);
+   font-weight: 700;
+   font-size: 42px;
+   line-height: 1.167;
+   letter-spacing: 0.05em;
+   color: #303030;
+}
+
+.undertitle{
+   font-weight: 600;
+   font-size: 11px;
+   line-height: 1.364;
+   letter-spacing: 0.1em;
+   color: #9da4bd;
+}
+
+/* HEADER */
+
+.header{
+   display: flex;
+   align-items: center;
+}
+
+.nav-list-link,
+.header-tel {
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 1.333;
+   letter-spacing: 0.1em;
+
+   /* color: #ffffff; */
+}
+
+/* HERO */
+
+.hero-title{
+   font-family: var(--secongary-font);
+   font-weight: 700;
+   font-size: 72px;
+   line-height: 1.181;
+   letter-spacing: 0.05em;
+    /* color: #ffffff; */
+}
+
+
+/* ABOUT */
+
+.about-text{
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.857px;
+   letter-spacing: 0.02em;
+   color: #555555;
+}
+
+/* SERVICES */
+
+.services-list-item-name,
+.services-list-item-price {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.667;
+   letter-spacing: 0.02em;
+   color: #9da4bd;
+}
+
+/* ACHIEVEMENTS */
+
+.achievments-list-item-count {
+   font-weight: 700;
+   font-size: 42px;
+   line-height: 1.357;
+   text-align: center;
+   letter-spacing: 0.05em;
+   color: #303030;
+}
+
+.achievments-list-item-desc{
+   font-weight: 600;
+   font-size: 11px;
+   line-height: 1.363;
+   text-align: center;
+   color: #303030;
+}
+
+/* CONTACT FORM*/
+
+/* CONTACT INFO */
+
+.contact-list-link,
+.contact-info-date{
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.667;
+   letter-spacing: 0.02em;
+   color: #9da4bd;
+}
+
+
+/* FOOTER */
+
+.copyright {
+   font-weight: 600;
+   font-size: 11px;
+   line-height: 1.364;
+   letter-spacing: 0.2em;
+   color:#9da4bd ;
+}
