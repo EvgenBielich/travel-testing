@@ -36,16 +36,44 @@ img {
 .address {
    font-style: normal;
 }
+
+.container {
+   width: 1200px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.section {
+   padding-top: 130px;
+   padding-bottom: 130px;
+}
 /* COMPONENTS */
 
 .modal-btn {
+   min-width: 160px;
+   height: 40px;
+   border: 1px solid var(--accent-color);
+   border-radius: 25px;
    font-weight: 600;
    font-size: 12px;
    line-height: 1.333;
    letter-spacing: 0.09em;
    text-transform: uppercase;
+   cursor: pointer;
+   background-color: transparent;
+   padding: 12px 20px;
 
     /* color: #ffffff; */
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+   background-color: var(--accent-color);
+   color: #ffffff;
+}
+
+.social-links{
+   display: flex;
 }
 
 .social-links-link {
@@ -89,11 +117,16 @@ img {
    line-height: 1.364;
    letter-spacing: 0.1em;
    color: #9da4bd;
+   margin-bottom: 20px;
 }
 
 /* HEADER */
+.header {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
 
-.header{
+.header .container{
    display: flex;
    align-items: center;
 }
@@ -108,7 +141,47 @@ img {
    /* color: #ffffff; */
 }
 
+.navigation{
+   display: flex;
+   align-items: center;
+}
+
+.nav-menu{
+   display: flex;
+}
+
+.header .logo {
+   margin-right: 70px;
+}
+
+.nav-list-item:not(:last-child) {
+margin-right: 40px;
+}
+
+.header .address {
+   margin-left: auto;
+   margin-right: 40px;
+}
 /* HERO */
+.hero .container {
+   display: flex;
+   
+}
+
+.hero-left-side{
+width: 100px;
+}
+
+.hero .description {
+   width: 340px;
+}
+
+.hero-right-side{
+flex-grow: 1;
+padding-left: 100px;
+padding-top: 272px;
+padding-bottom: 206px;
+}
 
 .hero-title{
    font-family: var(--secongary-font);
@@ -116,21 +189,75 @@ img {
    font-size: 72px;
    line-height: 1.181;
    letter-spacing: 0.05em;
+   margin-bottom: 20px;
     /* color: #ffffff; */
+}
+
+.social-links-item{
+   margin-right: 40px;
 }
 
 
 /* ABOUT */
+.about .container {
+   display: flex;
+}
+
+.about-list {
+   display: flex;
+}
+
+.about-list-item:not(:last-child){
+margin-right: 30px;
+}
+
+.about-right-side {
+   padding-left: 64px;
+}
+.about .title {
+   margin-bottom: 20px;
+}
+
+.about .description{
+   margin-bottom: 20px;
+}
 
 .about-text{
    font-weight: 400;
    font-size: 14px;
-   line-height: 1.857px;
+   line-height: 1.857;
    letter-spacing: 0.02em;
    color: #555555;
+   margin-bottom: 40px;
 }
 
 /* SERVICES */
+.services .title {
+   margin-bottom: 44px;
+}
+
+.services .modal-btn{
+   display: block;
+   margin: 0 auto;
+}
+.services-list-wrapper {
+   display: flex;
+   margin-bottom: 50px;
+}
+
+.services-list{
+   width: 50%;
+   padding: 30px 40px;
+}
+
+.services-list-item{
+   display: flex;
+   justify-content: space-between;
+}
+
+.services-list-item:not(:last-child) {
+   margin-bottom: 20px;
+}
 
 .services-list-item-name,
 .services-list-item-price {
@@ -143,13 +270,57 @@ img {
 
 /* ACHIEVEMENTS */
 
+.achievments .container {
+   display: flex;
+}
+
+.achievments-left-side{
+   width: 470px;
+   flex-shrink: 0;
+   padding-left: 100px;
+}
+
+.achievments-right-side{
+   padding-left: 130px;
+}
+
+.achievments .title {
+   margin-bottom: 20px;
+}
+
+.achievments .description {
+   padding-right: 106px;
+}
+
+.achievments-list{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+}
+
+.achievments-list-item{
+   width: 170px;
+   min-height: 133px;
+   background-color: rgb(240, 238, 238);
+   padding: 20px;
+}
+
+.achievments-list-item:nth-child(even) {
+   margin-top: 30px;
+}
+
+.achievments-list-item:not(:nth-child(even)) {
+   margin-right: 30px;
+}
+
 .achievments-list-item-count {
    font-weight: 700;
-   font-size: 42px;
+   font-size: 30px;
    line-height: 1.357;
    text-align: center;
    letter-spacing: 0.05em;
    color: #303030;
+   margin-bottom: 6px;
 }
 
 .achievments-list-item-desc{
@@ -159,6 +330,18 @@ img {
    text-align: center;
    color: #303030;
 }
+
+/* GALLERY */
+
+.gallery .title {
+   margin-bottom: 44px;
+}
+
+.gallery-list {
+   display: flex;
+   justify-content: space-between;
+}
+
 
 /* CONTACT FORM*/
 
@@ -175,6 +358,9 @@ img {
 
 
 /* FOOTER */
+.footer {
+   padding: 56px 0;
+}
 
 .copyright {
    font-weight: 600;
