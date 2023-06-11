@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TRAVEL</title>
+    <title>THE GUIDE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,28 +19,28 @@
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a class="logo link animate__pulse" href="/" aria-label="название сайта">Travel_24/7</a>
+          <a class="logo link animate__pulse" href="#" aria-label="название сайта">THE GUIDE</a>
           <ul class="nav-menu list">
             <li class="nav-list-item">
-              <a class="nav-list-link link" href="">Услуги</a>
+              <a class="nav-list-link link" href="#">Услуги</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-list-link link" href="">Цены</a>
+              <a class="nav-list-link link" href="#">Цены</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-list-link link" href="">Отзывы</a>
+              <a class="nav-list-link link" href="#">Отзывы</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-list-link link" href="">Контакты</a>
+              <a class="nav-list-link link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
   
         <address class="address">
-          <a class="header-tel link" href="tel:0507673464">+38 050 767 34 64</a>
+          <a class="header-tel link" href="tel:0507673464">+20 114 703 33 05</a>
         </address>
   
-        <button class="modal-btn modal-btn-dark-theme" type="button">ЗАБРОНИРОВАТЬ</button>
+        <button class="modal-btn modal-btn-dark-theme" type="button" data-modal-open>ЗАБРОНИРОВАТЬ</button>
       </div>
 
     </header>
@@ -52,15 +52,15 @@
           <div class="hero-left-side">
             <ul class="social-links list">
               <li class="social-links-item">
-                <a class="social-links-link link" href="">Inatagram</a>
+                <a class="social-links-link link" href="#">Inatagram</a>
               </li>
               <li class="social-links-item">
-                <a class="social-links-link link" href="">Youtube</a>
+                <a class="social-links-link link" href="#">Youtube</a>
               </li>
             </ul>
           </div>
           <div class="hero-right-side">
-            <h1 class="hero-title">Travel Egypt</h1>
+            <h1 class="hero-title">THE GUIDE</h1>
             <p class="description">
              Мы эксперты в крутых экскурсиях. Вы останетесь довольны.
             </p>
@@ -229,15 +229,17 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="close-modal">
+        <button type="button" class="close-modal" data-modal-close>
           <svg class="close">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
       </div>
     </div>
+
+    <script src="./js/open-modal.js"></script>
 
   </body>
 </html>
