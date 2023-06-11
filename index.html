@@ -9,13 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a class="logo link" href="/" aria-label="название сайта">Travel_24/7</a>
+          <a class="logo link animate__pulse" href="/" aria-label="название сайта">Travel_24/7</a>
           <ul class="nav-menu list">
             <li class="nav-list-item">
               <a class="nav-list-link link" href="">Услуги</a>
@@ -36,7 +40,7 @@
           <a class="header-tel link" href="tel:0507673464">+38 050 767 34 64</a>
         </address>
   
-        <button class="modal-btn" type="button">ЗАБРОНИРОВАТЬ</button>
+        <button class="modal-btn modal-btn-dark-theme" type="button">ЗАБРОНИРОВАТЬ</button>
       </div>
 
     </header>
@@ -96,19 +100,19 @@
           <h2 class="title">Услуги и цены</h2>
           <div class="services-list-wrapper">
             <ul class="services-list list">
-              <li class="services-list-item"><span class="services-list-item-name">Дайвинг</span> <span class="services-list-item-price">65$</span></li>
-              <li class="services-list-item"><span class="services-list-item-name">Квадроциклы</span> <span class="services-list-item-price">40$</span></li>
-              <li class="services-list-item"><span class="services-list-item-name">Супер сафари</span> <span class="services-list-item-price">50$</span></li>
-              <li class="services-list-item"><span class="services-list-item-name">Дом Дельфинов</span> <span class="services-list-item-price">65$</span></li>
+              <li class="services-list-item"><span class="services-list-item-name">Дайвинг</span><span class="underline"></span><span class="services-list-item-price">65$</span></li>
+              <li class="services-list-item"><span class="services-list-item-name">Квадроциклы</span><span class="underline"></span><span class="services-list-item-price">40$</span></li>
+              <li class="services-list-item"><span class="services-list-item-name">Супер сафари</span><span class="underline"></span><span class="services-list-item-price">50$</span></li>
+              <li class="services-list-item"><span class="services-list-item-name">Дом Дельфинов</span><span class="underline"></span><span class="services-list-item-price">65$</span></li>
             </ul>
             <ul class="services-list list">
-              <li class="services-list-item"><span class="services-list-item-name">Луксор</span> <span class="services-list-item-price">100$</span></li>
-              <li class="services-list-item"><span class="services-list-item-name">Каир пирамиды</span> <span class="services-list-item-price">100$</span></li>
-              <li class="services-list-item"><span class="services-list-item-name">Марса Мубарак</span> <span class="services-list-item-price">45$</span></li>
-              <li class="services-list-item"><span class="services-list-item-name">Поселение бедуинов</span> <span class="services-list-item-price">55$</span></li>
+              <li class="services-list-item"><span class="services-list-item-name">Луксор</span><span class="underline"></span><span class="services-list-item-price">100$</span></li>
+              <li class="services-list-item"><span class="services-list-item-name">Каир пирамиды</span><span class="underline"></span><span class="services-list-item-price">100$</span></li>
+              <li class="services-list-item"><span class="services-list-item-name">Марса Мубарак</span><span class="underline"></span><span class="services-list-item-price">45$</span></li>
+              <li class="services-list-item"><span class="services-list-item-name">Поселение бедуинов</span><span class="underline"></span><span class="services-list-item-price">55$</span></li>
             </ul>
           </div>
-          <button class="modal-btn" type="button">ЗАБРОНИРОВАТЬ</button>
+          <button class="modal-btn modal-btn-dark-theme" type="button">ЗАБРОНИРОВАТЬ</button>
         </div>
       </section>
 
@@ -224,5 +228,16 @@
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="close-modal">
+          <svg class="close">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
   </body>
 </html>
